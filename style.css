@@ -1,5 +1,108 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border box;
-  box-sizing: border box; }
+  box-sizing: border-box; }
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.wrapper {
+  width: 100%;
+  max-width: 1170px;
+  padding: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .wrapper--blue {
+    width: 100%;
+    background: #f1f8ff;
+    background-size: cover; }
+
+.TopWhite {
+  width: 100%;
+  text-align: center; }
+  .TopWhite__title {
+    margin-top: 100px;
+    font-family: 'Lato', sans-serif;
+    font-size: 50pt;
+    font-weight: 300;
+    color: #3677fd; }
+  .TopWhite__description {
+    margin-top: 65px;
+    margin-bottom: 115px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #5a5a5a;
+    line-height: 35pt; }
+
+.TopBlue {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  .TopBlue__menu {
+    width: 100%;
+    max-width: 1170px;
+    margin-top: 115px; }
+  .TopBlue__link {
+    text-decoration: none;
+    color: #3677fd; }
+    .TopBlue__link:hover {
+      background: #f9f2f9;
+      transition: 0.2s; }
+  .TopBlue__title {
+    margin-top: 90px;
+    font-family: 'Lato', sans-serif;
+    font-size: 50pt;
+    font-weight: 300;
+    color: #3677fd; }
+    .TopBlue__title--small {
+      margin-top: 60px;
+      font-size: 24pt;
+      font-weight: 700; }
+  .TopBlue__description {
+    margin-top: 30px;
+    margin-bottom: 90px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #5a5a5a;
+    line-height: 35pt;
+    text-align: center; }
+  .TopBlue__list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .TopBlue__item {
+    width: 360px;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+  .TopBlue__icon {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #b7c0c9;
+    border-radius: 50%; }
