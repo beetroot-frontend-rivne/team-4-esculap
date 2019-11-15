@@ -20,17 +20,25 @@
 
 .wrapper {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1170px; }
+
+.container {
   padding: 30px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center; }
-  .wrapper--blue {
-    width: 100%;
-    background: #f1f8ff;
-    background-size: cover; }
+
+.containerblue {
+  padding: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  background: #f1f8ff; }
 
 .TopWhite {
   width: 100%;
@@ -112,7 +120,8 @@
 .bottomwhite {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  background: #fff; }
   .bottomwhite .title {
     font-size: 40px;
     font-family: 'Lato', sans-serif;
