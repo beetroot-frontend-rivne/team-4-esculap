@@ -24,11 +24,13 @@
   background-size: cover;
   padding-top: 30px;
 }
-.header__menu__icon {
+
+.menu__icon {
   display: none;
   cursor: pointer;
 }
-.header__menu__items {
+
+.menu__items {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -37,6 +39,7 @@
   text-decoration: none;
   margin: 0 auto;
 }
+
 .header__container {
   display: flex;
   flex-direction: column;
@@ -44,10 +47,12 @@
   align-items: center;
   margin: 0 auto;
 }
+
 .header__logo {
   align-items: center;
   padding-bottom: 55px;
 }
+
 .header__title {
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -57,10 +62,12 @@
   color: white;
   padding-bottom: 44px;
 }
-.header .menu-item {
+
+.menu-item {
   margin-top: 25px;
 }
-.header a {
+
+a {
   font-size: 20px;
   font-weight: 400;
   color: white;
@@ -81,11 +88,10 @@ a:hover {
   padding-bottom: 80px;
 }
 
-.btn-container {
+.btncontainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 45px;
 }
 
 .btn {
@@ -109,6 +115,7 @@ a:hover {
 .scroll {
   display: flex;
   justify-content: center;
+  padding-top: 25px;
 }
 
 .main {
@@ -276,11 +283,30 @@ a:hover {
   opacity: 1;
 }
 
-.footer-container {
-  max-width: 1170px;
-  max-height: 245px;
+.footer {
+  width: 100%;
+  background-image: url(./img/Grupa13.jpg);
+  background-size: cover;
+  height: 220px;
+  padding-top: 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.footer__text {
+  font-family: "Lato Light";
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  margin-right: 25px;
+}
+.footer__text--bold {
+  font-family: "Lato Bold";
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer__container {
+  display: flex;
   align-items: center;
 }
 
@@ -289,25 +315,7 @@ a:hover {
   justify-content: center;
 }
 
-.footer {
-  width: 100%;
-  background-image: url(./img/Grupa13.jpg);
-  background-size: cover;
-  padding-top: 30px;
-}
-.footer__text {
-  font-family: "Lato Light";
-  font-size: 30px;
-  font-weight: 300;
-  color: white;
-}
-.footer__text--bold {
-  font-family: "Lato Bold";
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.btn__footer {
+.btn {
   width: 204px;
   height: 45px;
   max-width: 204px;
@@ -318,31 +326,32 @@ a:hover {
   font-size: 16px;
   color: #429bff;
 }
-.btn__footer:hover {
+
+.btn:hover {
   border: 2px solid #000f66;
   transform: translate(5px, 5px);
   transition: 0.5s;
 }
 
 @media screen and (max-width: 1024px) {
-  .header__menu__items {
+  .menu__items {
     display: none;
   }
 
-  .header__menu__icon {
+  .menu__icon {
     display: block;
   }
 
-  .header__menu__icon:hover + .header__menu__items {
-    display: block;
+  .menu__icon:hover + .menu__items {
     position: absolute;
-  }
-
-  .header__menu__icon:hover + .header__menu__items:hover {
     display: block;
   }
 
-  .header__menu__items:hover {
+  .menu__icon:hover + .menu__items:hover {
+    display: block;
+  }
+
+  .menu__items:hover {
     display: block;
   }
 
@@ -356,20 +365,20 @@ a:hover {
   }
 }
 @media screen and (max-width: 768px) {
-  .header__menu__icon {
+  .menu__icon {
     display: block;
   }
 
-  .header__menu__icon:hover + .header__menu__items {
+  .menu__icon:hover + .menu__items {
     display: block;
     position: absolute;
   }
 
-  .header__menu__icon:hover + .header__menu__items:hover {
+  .menu__icon:hover + .menu__items:hover {
     display: block;
   }
 
-  .header__menu__items:hover {
+  .menu__items:hover {
     display: block;
   }
 
