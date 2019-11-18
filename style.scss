@@ -361,6 +361,28 @@ a:hover {
           .header__menu__items {
             display: none;
           }
+
+          .header__menu__icon {
+            display: block;
+          }
+
+          .header__menu__icon:hover + .header__menu__items {
+            display: block;
+            position: absolute;
+        }
+
+        .header__menu__icon:hover + .header__menu__items:hover {
+            display: block;
+        }
+    
+        .header__menu__items:hover {
+            display: block;
+        }
+
+        .menu__item {
+            border: 2px solid #fff;
+            width: 120px;
+        }
     
         a {
             width: 60%;
