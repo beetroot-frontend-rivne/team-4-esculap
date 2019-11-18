@@ -12,6 +12,114 @@
     align-items: center;
 }
 
+
+.header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./img/Grupa13.jpg);
+    background-size: cover;
+    padding-top: 30px;
+
+    &__menu__icon {
+        display: none;
+        cursor: pointer;
+    }
+
+    &__menu__items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+        max-width: 1170px;
+        text-decoration: none;
+        margin: 0 auto;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    &__logo {
+        align-items: center;
+        padding-bottom: 55px;;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 40px;
+        text-transform: uppercase;
+        color: white;
+        padding-bottom: 44px;
+        
+    }
+ .menu-item {
+     margin-top: 25px;
+ }
+
+a {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    }
+}
+
+a:hover {
+    transition: 0.5s;
+    color: black;
+}
+
+.subtitle {
+    font-family: "Lato Lightg";
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+    
+}
+
+.btn {
+    width: 204px;
+    height: 35px;
+    max-width: 204px;
+    border-radius: 25px;
+    align-items: center;
+    font-family: "Lato Bold";
+    font-weight: 700;
+    font-size: 16px;
+    color: #429bff;
+}
+
+.btn:hover {
+    border: 2px solid #000f66;
+    transform: translate( 5px, 5px );
+    transition: 0.5s;
+}
+
+.scroll {
+    display: flex;
+    justify-content: center;
+}
+
+
+// MAIN
 .main {
     width: 100%;
     display: flex;
@@ -24,11 +132,6 @@
     width: 100%;
     max-width: 1170px;
     padding: 30px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
 
     &--blue {
         width: 100%;
@@ -202,3 +305,110 @@
          opacity: 1;
         }
     }
+
+    // FOOTER
+    .footer-container {
+        max-width: 1170px;
+        max-height: 245px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .btncontainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer {
+        width: 100%;
+        background-image: url(./img/Grupa13.jpg);
+        background-size: cover;
+        padding-top: 30px;
+    
+        &__text {
+            font-family: "Lato Light";
+            font-size: 30px;
+            font-weight: 300;
+            color: white;
+        }
+    
+        &__text--bold {
+            font-family: "Lato Bold";
+            font-size: 30px;
+            font-weight: 600;;
+        }
+    }
+      .btn__footer {
+        width: 204px;
+        height: 45px;
+        max-width: 204px;
+        border-radius: 25px;
+        align-items: center;
+        font-family: "Lato Bold";
+        font-weight: 700;
+        font-size: 16px;
+        color: #429bff; 
+    
+        &:hover {
+        border: 2px solid #000f66;
+        transform: translate( 5px, 5px );
+        transition: 0.5s;
+        }
+      }
+     
+      @media screen and (max-width: 1024px) {
+          .header__menu__items {
+            display: none;
+          }
+
+          .header__menu__icon {
+            display: block;
+          }
+
+          .header__menu__icon:hover + .header__menu__items {
+            display: block;
+            position: absolute;
+        }
+
+        .header__menu__icon:hover + .header__menu__items:hover {
+            display: block;
+        }
+    
+        .header__menu__items:hover {
+            display: block;
+        }
+
+        .menu__item {
+            border: 2px solid #fff;
+            width: 120px;
+        }
+    
+        a {
+            width: 60%;
+        }
+      }
+    
+     @media screen and (max-width: 768px){
+        .header__menu__icon {
+            display: block;
+        }
+    
+        .header__menu__icon:hover + .header__menu__items {
+            display: block;
+            position: absolute;
+        }
+    
+        .header__menu__icon:hover + .header__menu__items:hover {
+            display: block;
+        }
+    
+        .header__menu__items:hover {
+            display: block;
+        }
+        
+        .menu__item {
+            border: 2px solid #fff;
+            width: 120px;
+        }
+     }
